@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState, forwardRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import Laptop3D from "../laptop/laptop";
-import "./Projects.scss";
+import Laptop3D from "../../components/laptop/Laptop";
+import WarpBG from "../../components/warp-bg/WarpBG";
 
-import WarpBG from "../warp-bg/WarpBG";
+import "./Projects.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
