@@ -1,0 +1,47 @@
+{
+	"hero": {
+		"title": "Hi, I'm Juled",
+		"subtitle": "Full Stack Developer"
+	},
+	"about": {
+		"text": "Hi, I'm Juled Zaganjori, a Full Stack Developer based in Germany. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences."
+	},
+	"projects": [
+		{
+			"title": "Project 1",
+			"description": "This is a description of project 1.",
+			"link": "https://www.youtube.com",
+			"image": "https://picsum.photos/400/200"
+		},
+		{
+			"title": "Project 2",
+			"description": "This is a description of project 2.",
+			"link": "https://www.google.com",
+			"image": "https://picsum.photos/450/250"
+		},
+		{
+			"title": "Project 3",
+			"description": "This is a description of project 3.",
+			"link": "https://www.google.com",
+			"image": "https://picsum.photos/500/300"
+		},
+		{
+			"title": "Project 4",
+			"description": "This is a description of project 4.",
+			"link": "https://www.google.com",
+			"image": "https://picsum.photos/200/300"
+		},
+		{
+			"title": "Project 5",
+			"description": "This is a description of project 5.",
+			"link": "https://www.google.com",
+			"image": "https://picsum.photos/300/300"
+		},
+		{
+			"title": "Project 6",
+			"description": "This is a description of project 6.",
+			"link": "https://www.google.com",
+			"image": "https://picsum.photos/400/300"
+		}
+	]
+}
