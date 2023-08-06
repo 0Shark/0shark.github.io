@@ -5,15 +5,18 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Laptop3D from "../laptop/laptop";
 import "./Projects.scss";
 
+import WarpBG from "../warp-bg/WarpBG";
+
 gsap.registerPlugin(ScrollTrigger);
 
 let callCount = 0;
 export default function Projects(props) {
-  const projects = props.projects;
+	const projects = props.projects;
 
 	const projectRef = useRef(null);
 	const projectGridRef = useRef(null);
 	const laptopRef = useRef(null);
+	const warpBGRef = useRef(null);
 
 	const [laptopContent, setLaptopContent] = useState(projects[0]);
 
@@ -37,10 +40,28 @@ export default function Projects(props) {
 				onUpdate: (self) => {
 					let progress = self.progress.toFixed(2);
 					let index = Math.floor(progress * projects.length);
-          if (index >= projects.length) index = projects.length - 1;
-          
+					if (index >= projects.length) index = projects.length - 1;
+
 					setLaptopContent(projects[index]);
 				},
+			});
+
+			ScrollTrigger.create({
+				trigger: ".projects__content",
+				start: "top top",
+				end: "bottom bottom",
+				scrub: true,
+				pin: ".warp_scene",
+				pinSpacing: false,
+			});
+
+			ScrollTrigger.create({
+				trigger: ".projects__content",
+				start: "top top",
+				end: "bottom bottom",
+				scrub: true,
+				pin: ".warp__glass",
+				pinSpacing: false,
 			});
 		}, projectRef);
 
@@ -49,6 +70,8 @@ export default function Projects(props) {
 
 	return (
 		<section className="projects" ref={projectRef} id="projects">
+			<WarpBG forwardRef={warpBGRef} />
+			<div className="warp__glass"></div>
 			<div className="projects__content">
 				<div className="projects__list" ref={projectGridRef}>
 					{projects.map((project, index) => (
