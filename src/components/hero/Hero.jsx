@@ -43,13 +43,13 @@ const Hero = () => {
 			</div>
 			<div className="hero_social" ref={heroSocial}>
 				<a href="https://github.com/0Shark" target="_blank" rel="noreferrer">
-					<i className="fab fa-github hero_social-icon"></i>
+					<i className="fab fa-github hero_social-icon icon-3d"></i>
 				</a>
 				<a href="https://www.linkedin.com/in/juled-zaganjori/" target="_blank" rel="noreferrer">
-					<i className="fab fa-linkedin hero_social-icon"></i>
+					<i className="fab fa-linkedin hero_social-icon icon-3d"></i>
 				</a>
 				<a href="https://twitter.com/0Shark1" target="_blank" rel="noreferrer">
-					<i className="fab fa-twitter hero_social-icon"></i>
+					<i className="fab fa-twitter hero_social-icon icon-3d"></i>
 				</a>
 			</div>
 

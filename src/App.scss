@@ -1,0 +1,44 @@
+#root {
+  visibility: hidden;
+}
+
+.icon-3d {
+  padding: 10px;
+  -webkit-animation: icon3d 200ms 10;
+  animation: icon3d 200ms 10;
+  color: #fff;
+
+  &:hover {
+    -webkit-animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
+  }
+}
+
+$redColor: #f44336;
+$blueColor: #2196f3;
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px $redColor, -5px -6px $blueColor;
+  }
+
+  15% {
+    text-shadow: -5px -6px $redColor, 5px 4px $blueColor;
+  }
+
+  60% {
+    text-shadow: 5px -4px $redColor, -8px 4px $blueColor;
+  }
+
+  75% {
+    text-shadow: -8px -4px $redColor, -5px -4px $blueColor;
+  }
+
+  100% {
+    text-shadow: -5px 0 $redColor, 5px -4px $blueColor;
+  }
+}
+
+.scroller-content {
+  position: relative;
+}

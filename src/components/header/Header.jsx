@@ -12,6 +12,15 @@ const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	useEffect(() => {
+		// ScrollTrigger.create({
+		// 	trigger: headerRef.current,
+		// 	// Start before the trigger element
+		// 	start: "top-=100",
+		// 	end: "#about",
+		// 	pin: true,
+		// 	pinSpacing: false,
+		// });
+
 		const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 		tl.to(".header_logo", { y: "0%", duration: 1, stagger: 0.25 });
@@ -20,13 +29,6 @@ const Header = () => {
 		tl.to(".header_menu_mobile", { y: "0%", duration: 1, stagger: 0.25 }, "-=1");
 
 		tl.fromTo(headerRef.current, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.25 }, "-=1");
-
-		ScrollTrigger.create({
-			trigger: headerRef.current,
-			pin: true, // pin the trigger element while active
-			start: "top-2em top", // when the top of the trigger hits the top of the viewport
-			pinSpacing: false,
-		});
 	}, []);
 
 	const handleMenuToggle = () => {
