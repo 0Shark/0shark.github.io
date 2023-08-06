@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Hero = () => {
+const Hero = (props) => {
   const hero = useRef(null);
   const heroText = useRef(null);
   const heroSocial = useRef(null);
@@ -38,8 +38,8 @@ const Hero = () => {
 				</video>
 			</div>
 			<div className="hero_text" ref={heroText}>
-				<h1 className="hero_text-title">Hi, I'm Juled</h1>
-				<p className="hero_text-subtitle">Full Stack Developer</p>
+				<h1 className="hero_text-title">{props.title}</h1>
+				<p className="hero_text-subtitle">{props.subtitle}</p>
 			</div>
 			<div className="hero_social" ref={heroSocial}>
 				<a href="https://github.com/0Shark" target="_blank" rel="noreferrer">

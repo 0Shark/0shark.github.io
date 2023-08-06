@@ -6,7 +6,7 @@ import Text3D from "../funky-heading/funky-heading";
 
 import "./About.scss";
 
-const About = () => {
+const About = (props) => {
 	const about = useRef(null);
 	const aboutText = useRef(null);
 	const aboutSocial = useRef(null);
@@ -15,10 +15,7 @@ const About = () => {
 		<section className="about" ref={about} id="about">
 			<div className="about_text" ref={aboutText}>
 				<Text3D text="['JS', 'AI', 'Python', 'C++', 'HTML']"></Text3D>
-				<p className="about_text-subtitle">
-					Hi, I'm Juled Zaganjori, a Full Stack Developer based in Germany. I enjoy creating things that live on the internet, whether that be
-					websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
-				</p>
+				<p className="about_text-subtitle">{props.text}</p>
 			</div>
 			<div className="about_social" ref={aboutSocial}>
 				<a href="https://github.com/0Shark" target="_blank" rel="noreferrer">

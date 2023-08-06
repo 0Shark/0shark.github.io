@@ -12,15 +12,6 @@ const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	useEffect(() => {
-		// ScrollTrigger.create({
-		// 	trigger: headerRef.current,
-		// 	// Start before the trigger element
-		// 	start: "top-=100",
-		// 	end: "#about",
-		// 	pin: true,
-		// 	pinSpacing: false,
-		// });
-
 		const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 		tl.to(".header_logo", { y: "0%", duration: 1, stagger: 0.25 });
