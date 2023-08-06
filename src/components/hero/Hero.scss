@@ -39,7 +39,7 @@
   transform: translate(-50%, -50%);
   color: #fff;
   z-index: 2;
-  
+
   @media screen and (min-width: 768px) {
     text-align: center;
   }
@@ -49,6 +49,10 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 5rem;
+    }
   }
 
   &-subtitle {
@@ -57,12 +61,8 @@
     letter-spacing: 0.5rem;
 
     @media (max-width: 768px) {
-      font-size: 1rem;
+      font-size: 2rem;
     }
-  }
-
-  @media (max-width: 768px) {
-    top: 40%;
   }
 }
 
@@ -106,15 +106,14 @@
 .hero_scroll {
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  width: -moz-fit-content; // add this line to support Firefox 3+, Firefox for Android 4+
   font-size: 3em;
   z-index: 2;
-
-  @media (max-width: 768px) {
-
-    display: none;
-
-  }
+  cursor: pointer;
 
   a i {
     color: #fff;

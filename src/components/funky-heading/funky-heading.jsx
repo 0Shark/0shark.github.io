@@ -80,7 +80,6 @@ export default function Text3D(props) {
 	let text_array = props.text.replace(/[[\]']+/g, "").split(", ");
 
 	let text_position = text_array.map((e, i) => {
-		// -20 < x < 20
 		const x = Math.floor(Math.random() * 40) - 20;
 		const y = Math.floor(Math.random() * 40) - 20;
 		const z = Math.random() * 20 - 5;

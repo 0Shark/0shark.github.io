@@ -30,6 +30,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Replace values
+        shell: bash
+        env: 
+            GREENSOCK_TOKEN: ${{ secrets.GREENSOCK }}
+            FONTAWESOME_TOKEN: ${{ secrets.FONTAWESOME }}
+        run: |
+          sed -i.back "s|MY_GREENSOCK_TOKEN|${GREENSOCK_TOKEN}|g" ./.npmrc
+          sed -i.back "s|MY_FONTAWESOME_TOKEN|${FONTAWESOME_TOKEN}|g" ./.npmrc
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
