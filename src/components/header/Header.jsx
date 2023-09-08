@@ -45,7 +45,7 @@ const Header = () => {
 						<a href="#contact">Contact</a>
 					</li>
 					<li className="header_nav-resume">
-						<a href="#" target="_blank" rel="noreferrer" className="btn btn-primary">
+						<a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">
 							Resume
 						</a>
 					</li>
