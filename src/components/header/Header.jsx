@@ -51,7 +51,7 @@ const Header = () => {
 					</li>
 					<li className="header_nav-resume">
 						<a href="https://ai.juledz.com/" target="_blank" rel="noreferrer" className="btn btn-primary">
-							Live AI Intervie
+							Live AI Interview
 						</a>
 					</li>
 				</ul>
