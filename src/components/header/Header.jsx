@@ -49,6 +49,11 @@ const Header = () => {
 							Resume
 						</a>
 					</li>
+					<li className="header_nav-resume">
+						<a href="https://ai.juledz.com/" target="_blank" rel="noreferrer" className="btn btn-primary">
+							Live AI Intervie
+						</a>
+					</li>
 				</ul>
 			</nav>
 			<div className="header_hamburger" onClick={handleMenuToggle}>
@@ -73,8 +78,13 @@ const Header = () => {
 						</a>
 					</li>
 					<li className="header_nav-resume">
-						<a href="#" target="_blank" rel="noreferrer" className="btn btn-primary">
+						<a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">
 							Resume
+						</a>
+					</li>
+					<li className="header_nav-resume">
+						<a href="https://ai.juledz.com/" target="_blank" rel="noreferrer" className="btn btn-primary">
+							Live AI Interview
 						</a>
 					</li>
 				</ul>
