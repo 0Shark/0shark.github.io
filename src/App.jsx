@@ -10,6 +10,7 @@ import Hero from "./components/hero/Hero";
 import Loader from "./components/loader/Loader";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -144,6 +145,7 @@ function App() {
 				<Hero title={data.hero.title} subtitle={data.hero.subtitle} />
 				<About text={data.about.text} />
 				<Projects projects={data.projects} />
+				<Contact />
 			</div>
 		</div>
 	);
