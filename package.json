@@ -13,7 +13,7 @@
 		"@fortawesome/fontawesome-pro": "^6.1.1",
 		"@react-three/drei": "^9.80.1",
 		"@react-three/fiber": "^8.13.6",
-		"gsap": "npm:@gsap/business@^3.10.4",
+		"gsap": "^3.12.5",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.14.2",
